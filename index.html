@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skye 8 JS</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="menu-btn .active">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <nav class="sidebar">
+    <header>
+      <div class="logo">
+        <img src="../skye8.png" alt="">
+      </div>
+      <div class="search">
+        <form action="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search">
+        </form>
+      </div>
+    </header>
+    <div class="scrollbox">
+      <ul class=" scrollbox-inner">
+          <li class="nav-item" data-id="introduction"><a href="#introduction">Introduction</a></li>
+          <li class="nav-item" data-id="function"><a href="#functions">Functions</a></li>
+          <li class="nav-item" data-id="object"><a href="#object">Object</a></li>
+      </ul>
+    </div>
+    <footer>
+      <hr>
+      <div class="dark-mode">
+        <i class="fa-solid fa-moon"></i>
+        <h4>References</h4>
+      </div>
+    </footer>
+  </nav>
+  <main class="main-active">
+    <section class="main">
+      <div>
+        <h1>Introduction</h1>
+        <p>
+        <h2> Introduction:</h2>
+        JavaScript is a high-level, dynamic programming language used for creating interactive and dynamic web
+        applications. It
+        is a versatile and flexible language that is supported by all modern web browsers. JavaScript allows developers to
+        create dynamic and responsive user interfaces and add interactivity to web pages. It is also used for server-side
+        programming with Node.js.
+  
+        <h2>Where to:</h2>
+        JavaScript code can be added to HTML pages using script tags, which allows you to write JavaScript code directly
+        in the
+        HTML document. Alternatively, you can create a separate JavaScript file with the .js extension and include it in
+        your
+        HTML document. JavaScript can also be used for server-side programming with Node.js, which allows you to write
+        JavaScript code that runs on the server.
+  
+        <h2>Output:</h2>
+        The output of JavaScript code can be displayed on the browser's console or as part of an HTML page. You can use
+        the
+        <code>console.log()</code> method to display output on the console or use the <code>document.write()</code> method to display
+        output on an HTML
+        page.
+  
+        Here is an example of displaying output on the console using  <code>console.log():</code>
+  
+        <pre>
+              <code>
+    let message = 'Hello, world!';
+    console.log(message); // Output: Hello, world!
+              </code>
+            </pre>
+  
+  
+        Here is an example of displaying output on an HTML page using <code>document.write()</code>:
+  
+        <pre>
+              <code>
+    let message = 'Hello, world!';
+    document.write(message);
+              </code>
+            </pre>
+  
+        <h2>Statements:</h2>
+        JavaScript code consists of statements, which are instructions that the computer executes. JavaScript statements
+        can be
+        grouped together into blocks using curly braces. Statements are terminated with a semicolon (;) by convention,
+        although
+        it is not required in all cases.
+  
+        Here is an example of using a statement in JavaScript:
+  
+        <pre>
+              <code>
+    let x = 5;
+    if (x < 10) { console.log('x is less than 10'); }   
+              </code>
+            </pre>
+        <h2>Syntax: </h2>
+        JavaScript syntax is similar to other programming
+        languages, with variables, functions, loops, and conditional statements. JavaScript is case-sensitive and uses
+        keywords such as let, const, function, if, else, while, for, and switch. Here is an example of using syntax in
+        JavaScript:
+        <pre>
+                <code> 
+    function greet(name) { 
+      console.log('Hello, ' + name + ' !'); 
+    } greet('John'); 
+    // Output: Hello, John!
+                </code>
+              </pre>
+        In conclusion, JavaScript is a versatile and powerful language used for creating interactive and dynamic web
+        applications. By understanding the basic syntax and structure of JavaScript, developers can create responsive and
+        engaging user interfaces and build complex applications with ease.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>References</h2>
+        <ul>
+          <li><a href="http://">w3school.com</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</body>
+</html>

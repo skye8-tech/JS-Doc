@@ -1,0 +1,157 @@
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ddd;
+  font-size: 16px;
+  font-family: sans-serif;
+  height: 100vh;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #12171e;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px 0 20px;
+}
+nav .logo img {
+  height: 100px;
+}
+.scrollbox{
+  overflow: auto;
+  visibility: hidden;
+}
+.scrollbox-inner, .scrollbox:hover{
+  visibility: visible;
+}
+
+nav .search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #3a3b3c;
+  border: 1px solid #3a3b3c;
+  border-radius: 6px;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+nav .search input {
+  border: 0px;
+  background-color: transparent;
+  /* padding: 5px; */
+  font-size: 20px;
+  width: 89%;
+  color: #fff;
+}
+
+nav .search input:focus {
+  outline: none;
+}
+
+nav ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+nav ul li:hover {
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+nav ul li:hover a {
+  color: #12171e;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.dark-mode {
+  background-color: #3a3b3c;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #3a3b3c;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  
+}
+
+
+/************************************ Main Section ************************************/
+
+
+main {
+  float: right;
+  width: calc(100% - 250px);
+  padding: 40px 30px 0px 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 15px;
+}
+code {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+  line-height: 45px;
+}
+
+h2 {
+  padding: 10px 0;
+}
+
+    .menu-btn {
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      position: fixed;
+      top: 4;
+      z-index: 100;
+      padding: 10px;
+      margin: 5px 10px;
+    }
+  
+    .menu-btn.active {
+      position: fixed;
+      top: 4;
+      background-color: #12171e;
+      border-radius: 50px;
+      padding: 10px;
+      margin: 5px 10px;
+    }
+        .main-active {
+          width: 100%;
+        }
+@media screen and (max-width:900px) {
+  main{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
