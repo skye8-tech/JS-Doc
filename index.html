@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
 </head>
+
 <body>
   <div class="menu-btn .active">
     <i class="fa-solid fa-bars"></i>
@@ -30,9 +32,11 @@
     </header>
     <div class="scrollbox">
       <ul class=" scrollbox-inner">
-          <li class="nav-item" data-id="introduction"><a href="#introduction">Introduction</a></li>
-          <li class="nav-item" data-id="function"><a href="#functions">Functions</a></li>
-          <li class="nav-item" data-id="object"><a href="#object">Object</a></li>
+        <li class="nav-item" data-id="introduction"><a href="#introduction">Introduction</a></li>
+        <li class="nav-item" data-id="variable"><a href="#variable">Variable</a></li>
+        <li class="nav-item" data-id="data-type"><a href="#data-type">Data Type</a></li>
+        <li class="nav-item" data-id="function"><a href="#function">Functions</a></li>
+        <li class="nav-item" data-id="object"><a href="#object">Object</a></li>
       </ul>
     </div>
     <footer>
@@ -46,15 +50,17 @@
   <main class="main-active">
     <section class="main">
       <div>
-        <h1>Introduction</h1>
+        <h1 id="introduction">Introduction</h1>
         <p>
         <h2> Introduction:</h2>
         JavaScript is a high-level, dynamic programming language used for creating interactive and dynamic web
         applications. It
-        is a versatile and flexible language that is supported by all modern web browsers. JavaScript allows developers to
-        create dynamic and responsive user interfaces and add interactivity to web pages. It is also used for server-side
+        is a versatile and flexible language that is supported by all modern web browsers. JavaScript allows developers
+        to
+        create dynamic and responsive user interfaces and add interactivity to web pages. It is also used for
+        server-side
         programming with Node.js.
-  
+
         <h2>Where to:</h2>
         JavaScript code can be added to HTML pages using script tags, which allows you to write JavaScript code directly
         in the
@@ -62,42 +68,43 @@
         your
         HTML document. JavaScript can also be used for server-side programming with Node.js, which allows you to write
         JavaScript code that runs on the server.
-  
+
         <h2>Output:</h2>
         The output of JavaScript code can be displayed on the browser's console or as part of an HTML page. You can use
         the
-        <code>console.log()</code> method to display output on the console or use the <code>document.write()</code> method to display
+        <code>console.log()</code> method to display output on the console or use the <code>document.write()</code>
+        method to display
         output on an HTML
         page.
-  
-        Here is an example of displaying output on the console using  <code>console.log():</code>
-  
+
+        Here is an example of displaying output on the console using <code>console.log():</code>
+
         <pre>
               <code>
     let message = 'Hello, world!';
     console.log(message); // Output: Hello, world!
               </code>
             </pre>
-  
-  
+
+
         Here is an example of displaying output on an HTML page using <code>document.write()</code>:
-  
+
         <pre>
               <code>
     let message = 'Hello, world!';
     document.write(message);
               </code>
             </pre>
-  
+
         <h2>Statements:</h2>
         JavaScript code consists of statements, which are instructions that the computer executes. JavaScript statements
         can be
         grouped together into blocks using curly braces. Statements are terminated with a semicolon (;) by convention,
         although
         it is not required in all cases.
-  
+
         Here is an example of using a statement in JavaScript:
-  
+
         <pre>
               <code>
     let x = 5;
@@ -118,16 +125,430 @@
                 </code>
               </pre>
         In conclusion, JavaScript is a versatile and powerful language used for creating interactive and dynamic web
-        applications. By understanding the basic syntax and structure of JavaScript, developers can create responsive and
+        applications. By understanding the basic syntax and structure of JavaScript, developers can create responsive
+        and
         engaging user interfaces and build complex applications with ease.
         </p>
+        <h1 id="variable">Variables</h1>
+        <p>
+          JavaScript is a popular programming language that is widely used for creating dynamic and interactive web
+          pages. As a
+          language, JavaScript is known for its flexibility and ease of use, making it a popular choice among
+          developers. In this
+          article, we will explore some of the key features of JavaScript, including comments, variables, let, const,
+          var,
+          operations, arithmetic, assignment, and data types, with coding examples for each.
+
+        <h2> Comments </h2>
+        Comments are used in JavaScript to add explanatory text to your code. They are not executed by the browser, but
+        are
+        instead used by developers to explain what the code does. There are two types of comments in JavaScript:
+        single-line
+        comments and multi-line comments.
+
+        Single-line comments start with two forward slashes (//). For example:
+
+        <pre>
+    <code>
+  // This is a single-line comment
+    </code>
+  </pre>
+
+        Multi-line comments are enclosed in /* and */. For example:
+
+        <pre>
+    <code>
+    /* This is a
+    multi-line
+    comment */
+    </code>
+  </pre>
+
+        <h2>Variables </h2>
+
+        Variables are used to store data in a program. In JavaScript, variables can be declared using three keywords:
+        let,
+        const, and var.
+
+        The let keyword is used to declare variables that can be reassigned later. For example:
+
+        <pre>
+    <code>
+  let x = 5;
+  x = 6;
+    </code>
+  </pre>
+
+        The const keyword is used to declare variables that cannot be reassigned. For example:
+
+        <pre>
+    <code>
+    const y = 10;
+    </code>
+  </pre>
+
+        The var keyword is the older way of declaring variables in JavaScript, but it is still commonly used. Variables
+        declared
+        with var have a function scope, while variables declared with let and const have block scope. For example:
+
+        <pre>
+    <code>
+  var z = 15;
+  function myFunction() {
+    var z = 20;
+    console.log(z); // Output: 20
+  }
+  console.log(z); // Output: 15
+    </code>
+  </pre>
+
+        <h2>Operations</h2>
+
+        In JavaScript, there are several types of operations that can be performed on data. These include arithmetic
+        operations,
+        assignment operations, comparison operations, and logical operations.
+
+        Arithmetic Operations
+
+        Arithmetic operations are used to perform calculations on data. JavaScript supports several arithmetic
+        operators,
+        including + (addition), - (subtraction), * (multiplication), / (division), and % (modulo). For example:
+
+        <pre>
+    <code>
+  let a = 5;
+  let b = 10;
+  let c = a + b;
+  console.log(c); // Output: 15
+    </code>
+  </pre>
+
+        <h2>Assignment </h2>
+
+        Assignment operations are used to assign values to variables. In JavaScript, the = operator is used for
+        assignment. For
+        example:
+
+        <pre>
+    <code>
+  let x = 5;
+  x = 10;
+  console.log(x); // Output: 10
+    </code>
+  </pre>
+
+        <h2>Comparison </h2>
+
+        Comparison operations are used to compare two values and return a Boolean value. JavaScript supports several
+        comparison
+        operators, including == (equal to), != (not equal to), > (greater than), < (less than),>= (greater than or equal
+          to),
+          and <= (less than or equal to). For example: <pre>
+            <code>
+  let a=5; let b=10; 
+  console.log(a> b); // Output: false
+  console.log(a == b); // Output: false
+  console.log(a < b); // Output: true 
+    </code>
+            </pre>
+
+            <h2>Logical Operations </h2>
+
+            Logical operations are used to combine multiple Boolean values and return a single Boolean value. JavaScript
+            supports
+            several logical operators, including && (and), || (or), and ! (not). For example:
+            <pre>
+    <code>
+  let a=5; let b=10; 
+  console.log(a> 0 && b < 20); // Output: true 
+  console.log(a < 0 || b < 20); // Output: true 
+  console.log(!(a> b)); // Output: true
+    </code>
+  </pre>
+
+            <h2>Data Types </h2>
+
+            JavaScript supports several
+            </p>
+            <h1 id="data-types">Data Tyoes</h1>
+            <p>
+              Data types in JavaScript are an important aspect of the language. They define the different types of
+              values that can be
+              stored in variables and manipulated in code. In this article, we will explore the different data types in
+              JavaScript and
+              provide coding examples for each.
+
+              Primitive Data Types
+
+              Primitive data types are the most basic types of data in JavaScript. They are immutable, meaning that
+              their values
+              cannot be changed once they are created. There are six primitive data types in JavaScript: `undefined`,
+              `null`,
+              `boolean`, `number`, `string`, and `symbol`.
+
+              1. `undefined`: The `undefined` data type represents a value that has not been assigned yet. Here is an
+              example:
+
+            <pre>
+    <code>
+  let x;
+  console.log(x); // Output: undefined
+      </code>
+  </pre>
+
+            2. `null`: The `null` data type represents a value that is intentionally empty. Here is an example:
+
+            <pre>
+    <code>
+  let y = null;
+  console.log(y); // Output: null
+    </code>
+  </pre>
+
+            3. `boolean`: The `boolean` data type represents a logical value that can be either `true` or `false`. Here
+            is an
+            example:
+
+            <pre>
+    <code>
+  let isStudent = true;
+  console.log(isStudent); // Output: true
+      </code>
+  </pre>
+
+            4. `number`: The `number` data type represents a numeric value. Here is an example:
+
+            <pre>
+    <code>
+  let age = 25;
+  console.log(age); // Output: 25
+      </code>
+  </pre>
+
+            5. `string`: The `string` data type represents a sequence of characters. Here is an example:
+
+            <pre>
+    <code>
+  let name = "John";
+  console.log(name); // Output: John
+      </code>
+  </pre>
+
+            6. `symbol`: The `symbol` data type represents a unique identifier. Here is an example:
+
+            <pre>
+    <code>
+  let id = Symbol("123");
+  console.log(id); // Output: Symbol(123)
+      </code>
+  </pre>
+
+            Object Data Type
+
+            The `object` data type is a complex data type that can store collections of data in the form of key-value
+            pairs. Objects
+            are mutable, meaning that their values can be changed after they are created. Here is an example:
+
+            <pre>
+    <code>
+  let person = {
+  name: "John",
+  age: 25,
+  isStudent: true
+  };
+  console.log(person); // Output: { name: "John", age: 25, isStudent: true }
+      </code>
+  </pre>
+
+            Arrays Data Type
+
+            The `array` data type is a special type of object that can store a collection of data. Arrays are mutable,
+            meaning that
+            their values can be changed after they are created. Here is an example:
+
+            <pre>
+    <code>
+  let fruits = ["apple", "banana", "orange"];
+  console.log(fruits); // Output: ["apple", "banana", "orange"]
+      </code>
+  </pre>
+
+            Type Conversions
+
+            JavaScript allows for type conversions between different data types. This can be done implicitly or
+            explicitly.
+
+            Implicit Conversion:
+
+            <pre>
+    <code>
+  let num = 10;
+  let str = "5";
+  let result = num + str;
+  console.log(result); // Output: 105 (the string "5" is implicitly converted to a number)
+      </code>
+  </pre>
+
+            Explicit Conversion:
+
+            <pre>
+    <code>
+  let str = "5";
+  let num = Number(str);
+  console.log(num); // Output: 5 (the string "5" is explicitly converted to a number using the Number() function)
+      </code>
+  </pre>
+
+            <h3>Conclusion</h3>
+
+            Data types in JavaScript are essential for manipulating and working with values in code. Understanding the
+            different
+            data types and how they can be used is crucial for writing effective JavaScript programs. By utilizing the
+            various data
+            types and type conversions in JavaScript, developers can create powerful and flexible applications.
+            </h3>
+            </p>
+            <h1 id="function">Functions</h1>
+            <p>
+              Functions in JavaScript are a powerful feature that allows developers to write reusable blocks of code.
+              They are a key
+              part of the language and are used extensively in many JavaScript applications. In this article, we will
+              explore what
+              functions are, how they work, and provide coding examples for each.
+
+              What are Functions?
+
+              A function in JavaScript is a set of instructions that can be called and executed at any point in the
+              program. Functions
+              are used to encapsulate a block of code and can be reused in different parts of the program.
+
+              Functions can take in arguments, perform operations, and return a value. Arguments are values passed into
+              the function
+              when it is called, and the returned value is the result of the function's execution.
+
+              Creating a Function
+
+              A function can be created in JavaScript using the `function` keyword, followed by the name of the function
+              and a set of
+              parentheses. Inside the parentheses, we can list the parameters that the function will take.
+
+              Here is an example of a simple function that takes in two arguments and returns their sum:
+
+            <pre>
+    <code>
+  function addNumbers(num1, num2) {
+    return num1 + num2;
+  }
+    </code>
+  </pre>
+
+            In this function, `num1` and `num2` are the parameters, and `return num1 + num2` is the operation that is
+            performed on
+            the parameters. The `return` keyword indicates what value the function will return when it is called.
+
+            Calling a Function
+
+            Once a function is defined, it can be called at any point in the program by using the function name followed
+            by a set of
+            parentheses. When a function is called, any arguments that are passed in are used as the values for the
+            function's
+            parameters.
+
+            Here is an example of how to call the `addNumbers` function that we defined earlier:
+
+            <pre>
+    <code>
+  let sum = addNumbers(3, 4);
+  console.log(sum); // Output: 7
+    </code>
+  </pre>
+
+            In this example, we are calling the `addNumbers` function and passing in the arguments `3` and `4`. The
+            function returns
+            the sum of these two numbers, which is stored in the `sum` variable. The `console.log` statement then
+            outputs the value
+            of `sum`, which is `7`.
+
+            Function Expressions
+
+            In addition to the `function` keyword, JavaScript also allows for function expressions. A function
+            expression is a
+            function that is assigned to a variable, and can be called using that variable.
+
+            Here is an example of a function expression that does the same thing as our `addNumbers` function:
+
+            <pre>
+    <code>
+  let add = function(num1, num2) {
+    return num1 + num2;
+  };
+    </code>
+  </pre>
+
+            In this example, the `add` variable is assigned a function that takes in two parameters and returns their
+            sum. This
+            function can then be called by using the `add` variable, like this:
+
+            <pre>
+    <code>
+  let sum = add(3, 4);
+  console.log(sum); // Output: 7
+    </code>
+  </pre>
+
+            Arrow Functions
+
+            Arrow functions are a newer way of defining functions in JavaScript, introduced in ECMAScript 6. They are a
+            more concise
+            way of writing functions, and are often used in modern JavaScript code.
+
+            Here is an example of an arrow function that does the same thing as our `addNumbers` function:
+
+            <pre>
+    <code>
+  let add = (num1, num2) => num1 + num2;
+    </code>
+  </pre>
+
+            In this example, the `add` variable is assigned an arrow function that takes in two parameters and returns
+            their sum.
+            This function can then be called by using the `add` variable, like this:
+
+            <pre>
+    <code>
+  let sum = add(3, 4);
+  console.log(sum); // Output: 7
+    </code>
+  </pre>
+
+            <h3>Conclusion</h3>
+
+            Functions in JavaScript are a powerful feature that allow developers to write reusable blocks of code. They
+            can take in
+            </p>
       </div>
     </section>
     <section>
       <div>
-        <h2>References</h2>
+        <h2>Resources </h2>
         <ul>
-          <li><a href="http://">w3school.com</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla Developer Network (MDN)</a></li>
+          <li><a href="https://www.w3schools.com/js/default.asp">W3Schools</a></li>
+          <li><a href="https://javascript.info/">JavaScript.info</a></li>
+          <li><a href="https://www.codecademy.com/learn/introduction-to-javascrip">Codecademy</a></li>
+          <li><a
+              href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/">FreeCodeCamp</a>
+          </li>
+          <li><a href="https://eloquentjavascript.net/">Eloquent JavaScript</a></li>
+          <li><a href="https://www.udemy.com/topic/javascript/free/">Udemy (Some courses are free)</a></li>
+          <li>Some YouTube channels: </li>
+          <ul>
+            <li><a href="https://www.youtube.com/user/TechGuyWeb">Traversy Media</a></li>
+            <li><a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ">freeCodeCamp.org</a></li>
+            <li><a href="https://www.youtube.com/user/programmingwithmosh">Programming with Mosh</a></li>
+            <li><a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg">The Net Ninja</a></li>
+            <li><a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">JavaScript Crash Course For Beginners</a></li>
+          </ul>
         </ul>
       </div>
     </section>
@@ -136,4 +557,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
 </body>
+
 </html>
